@@ -1,0 +1,13 @@
+---
+pipeline: "workflows/php/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
+buildName: "cakephp-ex"
+codeReview: false
+links:
+  Git: "https://github.com/wangft/cakephp-ex.git"
+  Job: "http://jenkins.default.vagrant.f8/job/cakephp-ex"
+  Production: "http://10.123.242.114:80/kubernetes/pods?namespace=default-production"
+  Staging: "http://10.123.242.114:80/kubernetes/pods?namespace=default-staging"
+environments:
+  Staging: "default-staging"
+  Production: "default-production"
+useLocalFlow: true
